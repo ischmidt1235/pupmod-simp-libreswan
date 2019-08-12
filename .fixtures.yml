@@ -14,5 +14,9 @@ fixtures:
     # logrotate: https://github.com/simp/pupmod-simp-logrotate
     # rsyslog: https://github.com/simp/pupmod-simp-rsyslog
     # simpcat: https://github.com/simp/pupmod-simp-simpcat
+    disa_stig-el7-baseline:
+      repo: https://github.com/simp/inspec-profile-disa_stig-el7
+      branch:  master
+      target: spec/fixtures/inspec_deps/inspec_profiles/profiles
   symlinks:
     libreswan: "#{source_dir}"
