@@ -215,3 +215,9 @@ pup5.5.7-oel:
   <<: *acceptance_base
   script:
     - 'bundle exec rake beaker:suites[default,oel]'
+
+pup6-compliance:
+  <<: *pup_6
+  <<: *compliance_base
+  script:
+    - 'BEAKER_fips=yes bundle exec rake beaker:suites[compliance]'
